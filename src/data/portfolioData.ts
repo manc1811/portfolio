@@ -60,7 +60,7 @@ export const portfolioData: PortfolioData = {
       linkedin: "linkedin.com/in/mansi-rawat"
     },
     bio: "AI Engineer specializing in fine-tuning open-source LLMs, building autonomous AI Agents, and optimizing inference on multi-node GPU clusters.",
-    resumeLink: "https://drive.google.com/file/d/1ILhNuAeuNXhv4jpyy6mPPBaT5GMXALKn/view?usp=sharing"
+    resumeLink: "https://drive.google.com/file/d/1be9wb0Pu9gVAaGjXNviRuBu1-FDW-G9u/view?usp=sharing"
   },
   skills: {
     llm_ops: [
