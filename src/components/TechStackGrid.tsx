@@ -67,7 +67,7 @@ export const TechStackGrid = () => {
 
                 {/* Skills */}
                 <div className="flex flex-wrap gap-2">
-                  {skills.map((skill, skillIndex) => (
+                  {skills.map((skill: string, skillIndex: number) => (
                     <motion.div
                       key={skillIndex}
                       initial={{ opacity: 0, scale: 0.8 }}

@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
-import { Heart, Terminal, Download } from 'lucide-react';
+import { Terminal, Download } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="py-12 px-4 bg-cyber-bg border-t border-cyber-border">
       <div className="max-w-6xl mx-auto">
