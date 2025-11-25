@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-cyber-border;
+  }
+
+  body {
+    @apply bg-cyber-bg text-cyber-text font-sans;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .terminal-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.2em;
+    background-color: #00f0ff;
+    animation: blink 1s infinite;
+    vertical-align: text-bottom;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5),
+                 0 0 20px rgba(0, 240, 255, 0.3),
+                 0 0 30px rgba(0, 240, 255, 0.2);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3),
+                inset 0 0 10px rgba(0, 240, 255, 0.1);
+  }
+
+  .card-glow:hover {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4),
+                0 0 40px rgba(0, 240, 255, 0.2);
+  }
+}
