@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Terminal, Download } from 'lucide-react';
+import { Terminal, Download, Mail } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export const Footer = () => {
@@ -13,18 +13,30 @@ export const Footer = () => {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center gap-6"
         >
-          {/* Resume Download Button */}
-          <motion.a
-            href={portfolioData.profile.resumeLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyber-accent to-cyber-purple text-white font-mono font-bold rounded-lg shadow-lg hover:shadow-cyber-accent/50 transition-all duration-300 glow-border"
-          >
-            <Download className="w-5 h-5" />
-            <span>Download Resume</span>
-          </motion.a>
+          {/* Action Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <motion.a
+              href={portfolioData.profile.resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyber-accent to-cyber-purple text-white font-mono font-bold rounded-lg shadow-lg hover:shadow-cyber-accent/50 transition-all duration-300 glow-border"
+            >
+              <Download className="w-5 h-5" />
+              <span>Download Resume</span>
+            </motion.a>
+
+            <motion.a
+              href={`mailto:${portfolioData.profile.contact.email}`}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-3 px-8 py-4 border-2 border-cyber-accent text-cyber-accent font-mono font-bold rounded-lg shadow-lg hover:bg-cyber-accent hover:text-white hover:shadow-cyber-accent/50 transition-all duration-300"
+            >
+              <Mail className="w-5 h-5" />
+              <span>Contact Me</span>
+            </motion.a>
+          </div>
 
           {/* Terminal prompt style footer */}
           <div className="flex items-center gap-2 text-cyber-textMuted font-mono text-sm">
