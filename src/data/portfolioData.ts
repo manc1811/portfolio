@@ -146,6 +146,12 @@ export const portfolioData: PortfolioData = {
       tech: ["Python", "System Design", "LLMs", "Orchestration"],
       description: "Built an intelligent query routing system that dynamically selects between high-capability and lightweight LLMs based on query complexity to optimize cost and latency.",
       link: "https://github.com/manc1811/ModelMesh"
+    },
+    {
+      title: "Screen Translator — Real-time EN/JA Translation",
+      tech: ["Python", "PyQt6", "EasyOCR", "Qwen3-VL", "OpenAI API"],
+      description: "Built a real-time screen translation tool between English and Japanese. Captures screen content via OCR, translates using a Vision-Language Model, and displays results as transparent overlays or in a floating panel — with global hotkeys, batch translation, and caching for speed.",
+      link: "https://github.com/manc1811/screen-translator"
     }
   ],
   education: {
